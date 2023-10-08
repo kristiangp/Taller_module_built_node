@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "2451c28e-ba96-4d25-8c7b-5d68f4291637",
+		"name": "Camisetas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29860203"
+	},
+	"item": [
+		{
+			"name": "Create camiseta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"color\": \"verde\",\r\n  \"talla\": \"S\",\r\n  \"tipo\": \"manga corta\",\r\n  \"marca\": \"lacoste\",\r\n  \"precio\": 49.99,\r\n  \"disponible\": true,\r\n  \"stock\": 50,\r\n  \"fechaLanzamiento\": \"2023-09-06T14:30:00.000Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/camisetas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"camisetas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Camisetas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/camisetas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"camisetas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readFile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/read-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"read-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Camiseta by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/camisetas/91b09e50-8fac-4293-abd5-34fc822432e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"camisetas",
+						"91b09e50-8fac-4293-abd5-34fc822432e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update pet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"color\": \"roja\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/camisetas/91b09e50-8fac-4293-abd5-34fc822432e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"camisetas",
+						"91b09e50-8fac-4293-abd5-34fc822432e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete pet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/camisetas/86fd4cc5-086c-41b3-a1c5-013a62e07051",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"camisetas",
+						"86fd4cc5-086c-41b3-a1c5-013a62e07051"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
